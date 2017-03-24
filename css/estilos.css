@@ -7,6 +7,16 @@ header {
   position: relative;
 }
 
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    padding: 20px 0;
+    clear: both;
+}
+
+footer .container {
+  position: relative;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -21,6 +31,17 @@ header {
 
 .menu-opcoes a {
   color: #003366;
+  transition: 2s linear;
+}
+
+.menu-opcoes a:hover {
+  color: #007dc6;
+  transition: background 2s linear;
+  background: blue;
+}
+
+.menu-opcoes a:active {
+  color: #867dc6;
 }
 
 .menu-opcoes ul {
@@ -47,7 +68,17 @@ header {
 .botao-buscar {
   background: url(../img/busca.png);
   height: 20px;
-  width: 18px;
+  width: 20px;
+  background-repeat: no-repeat;
+
+  /* image replacement */
+  display: block;
+  text-indent: -9999px;
+}
+
+.busca {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .busca input {
@@ -86,6 +117,22 @@ header {
   padding: 5px 10px;
 }
 
+.menu-departamentos li ul {
+  display: none;
+}
+
+.menu-departamentos li li a::before {
+  content: '-';
+}
+
+.menu-departamentos li:hover ul {
+  display: block;
+}
+
+.menu-departamentos ul ul li {
+  background-color: #dcdcdc;
+}
+
 .menu-departamentos a {
   color: #333333;
   text-decoration: none;
@@ -107,6 +154,12 @@ header {
   margin: 10px 0;
   padding: 10px;
   width: 445px;
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 4px #999;
+}
+
+.painel h2 {
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .painel li {
@@ -116,6 +169,18 @@ header {
 
   margin: 2px;
   padding-bottom: 10px;
+  transition: 0.7s ease-out;
+}
+
+.painel li:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 5px #333;
+  transition: 0.7s ease-in;
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.painel li:nth-child(2n):hover {
+  transform: scale(1.2) rotate(5deg);
 }
 
 .painel h2 {
@@ -135,9 +200,44 @@ header {
 .novidades {
   float: left;
   background-color: #f5dcdc;
+  background: linear-gradient(#f5dcdc, #bebef4);
 }
 
 .mais-vendidos {
   float: right;
   background-color: #dcdcf5;
+  background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+.social {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+.social li {
+  float: left;
+  margin-left: 25px;
+}
+
+.social a {
+  /* tamanho da imagem */
+  height: 32px;
+  width: 32px;
+
+  /* image replacement */
+  display: inline-block;;
+  text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+  background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+  background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+  background-image: url(../img/googleplus.png);
 }

@@ -72,13 +72,18 @@ footer .container {
   background-repeat: no-repeat;
 
   /* image replacement */
-  display: block;
-  text-indent: -9999px;
+  display: inline-block;
+  text-indent: -9999em;
+  border: none;
 }
 
 .busca {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+}
+
+.busca form {
+  vertical-align: middle;
 }
 
 .busca input {
@@ -226,8 +231,8 @@ footer .container {
   width: 32px;
 
   /* image replacement */
-  display: inline-block;;
-  text-indent: -9999px;
+  display: inline-block;
+  text-indent: -9999em;
 }
 
 .social a[href*="facebook.com"] {

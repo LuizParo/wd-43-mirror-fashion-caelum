@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Sobre a Mirror Fashion</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 320px)">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
     <link rel="stylesheet" href="css/sobre.css" >
   </head>
   <body>
-    <img src="img/logo.png">
+    <?php include("cabecalho.php") ?>
+
     <h1>A Mirror Fashion</h1>
 
     <p>
@@ -77,9 +81,6 @@
       <li>Mais de um milhão de funcionários em todo o mundo</li>
     </ul>
 
-    <div id="rodape">
-      <img src="img/logo.png" />
-      &copy; Copyright Mirror Fashion
-    </div>
+    <?php include("rodape.php") ?>
   </body>
 </html>

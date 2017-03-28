@@ -1,0 +1,45 @@
+.cores {
+  position: relative;
+}
+
+.cores input[name=cor] {
+  position: absolute;
+  top: 90px;
+}
+
+.cores input[type=radio] {
+  display: none;
+}
+
+.cores label::before {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 90px;
+}
+
+.cores label[for=rosa]::before {
+  background: pink;
+  left: 60px;
+}
+
+.cores label[for=verde]::before {
+  background: green;
+  left: 120px;
+}
+
+.cores label[for=azul]::before {
+  background: blue;
+  left: 180px;
+}
+
+.cores img {
+  display: none;
+}
+
+input:checked + label img {
+  display: block;
+}

@@ -47,6 +47,7 @@
               <legend>Escolha o tamanho:</legend>
 
               <input type="range" name="tamanho" id="tamanho" min="36" max="46" step="2" value="42">
+              <output for="tamanho">42</output>
             </fieldset>
 
             <input type="submit" class="comprar" name="comprar" value="Comprar">
@@ -92,5 +93,7 @@
     </div>
 
     <?php include("rodape.php") ?>
+
+    <script src="js/produto.js"></script>
   </body>
 </html>

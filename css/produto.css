@@ -136,6 +136,19 @@ label[for=azul]::after {
   max-width: 36em;
 }
 
+.tamanho output {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+
+  line-height: 44px;
+  text-align: center;
+
+  border: 3px solid #666;
+  border-radius: 50%;
+  color: #555;
+}
+
 table {
   border-spacing: 0.2em;
   border-collapse: separate;

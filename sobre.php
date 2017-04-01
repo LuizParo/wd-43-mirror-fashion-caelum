@@ -68,6 +68,8 @@
       Fashion, além de presidentes da União Européia, Ásia e o secretário-geral da ONU.
     </p>
 
+    <iframe src="https://youtu.be/Tb06abHE4hY" width="420" height="315" allowfullscreen></iframe>
+
     <h2 id="diferenciais">Diferenciais</h2>
 
     <ul>
